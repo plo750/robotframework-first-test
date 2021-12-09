@@ -1,17 +1,8 @@
 *** Settings ***
-Library     SeleniumLibrary
+Resource    ../resources/common.robot
 
-*** Variables ***
-${BROWSER}        Chrome
-${ENDPOINT}       https://www.google.com
-
-*** Keywords ***
-First keyword
-    open browser   about:blank   browser=${BROWSER}     options=add_argument("--disable-popup-blocking"); add_argument("--ignore-certificate-errors")
-    # Maximize Browser Window
-    go to   ${ENDPOINT}
-    close browser
+Suite Setup    common.Begin Web Test
+Suite Teardown    common.End Web Test
 
 *** Test Cases ***
-Main Test
-    First keyword
+
