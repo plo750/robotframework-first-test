@@ -8,6 +8,7 @@ Begin Web Test
     maximize browser window
 
     go to   ${HOMEPAGE}
+    Wait Until Page Contains  Amazon
 
 End Web Test
     close browser

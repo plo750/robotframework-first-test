@@ -1,3 +1,3 @@
 *** Variables ***
 ${BROWSER}        Chrome
-${HOMEPAGE}       https://www.amazon.fr
+${HOMEPAGE}       https://www.amazon.fr/
